@@ -1,0 +1,24 @@
+.thanks{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(69, 70, 70);
+}
+
+.thanks h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: rgb(145, 144, 142);
+}
+.thanks p{
+    font-family:cursive;
+    color: azure;
+}
+.thanks img{
+    width: 200px;
+    height: 200px;
+    border-radius: 1px;
+}

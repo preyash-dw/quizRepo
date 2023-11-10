@@ -1,0 +1,132 @@
+/* Register.css */
+.logo img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.register {
+    background-color: black; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 20px 0; 
+  }
+  
+  .container {
+    background-color: white; 
+    width: 80%;
+    max-width: 600px;
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .start{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .start button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(63, 146, 184);
+    width: 20%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+  .start button span{
+    margin-top: 2%;
+  }
+  
+
+  .write, .instruct {
+    display: none;
+  }
+
+  .write.visible {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 60%;
+  }
+  .write input{
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+  .write button{
+    padding: 7px;
+    background: rgb(89, 231, 89);
+    color: white;
+    width: 40%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  Webcam{
+    width: 100px;
+  }
+  .instruct.visible{
+    display: block;
+    height: 200px;
+    overflow-y: auto;
+  }
+ 
+
+  /* .write.visible,
+.instruct.visible {
+  display:contents;
+} */
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 80%; /* Adjust the width for smaller tablets */
+    max-width: none; /* Remove the maximum width for smaller tablets */
+  }
+
+  .start button,
+  .write button {
+    width: 80%; /* Adjust the width for smaller tablets */
+  }
+}
+
+/* Media Query for Mobile */
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 85%; /* Adjust the width for smaller mobile screens */
+    max-width: none; /* Remove the maximum width for smaller mobile screens */
+  }
+
+  .start button{
+    width: 50%;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+  }
+  .write.visible{
+    width: 90%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .write button{
+    width: 30%;
+  }
+}
